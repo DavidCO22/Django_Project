@@ -1,0 +1,30 @@
+{% extends 'layouts/navegacion.html' %}
+
+{% block content %}
+
+<h1>Login</h1>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{error}}
+    <br>
+    <br>
+    <div>
+    <label for="username">Nombre usuario</label>
+    <input name="username" id="username" type="text">
+    </div>
+    <br><br>
+    <div>
+    <label for="password">Contraseña</label>
+    <input name="password" id="password" type="password">
+    </div>
+    <br><br>
+    <button>entrar</button>
+</form>
+
+
+<a href="{% url 'registro' %}">Registrate</a>
+ 
+
+
+{% endblock %}

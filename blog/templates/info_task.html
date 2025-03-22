@@ -1,0 +1,10 @@
+{% extends 'layouts/navegacion.html' %}
+
+{% block content %}
+<h1>{{tarea}}</h1>
+
+<h3> <i>Descripcion: {{tarea.description}}</i> </h3>
+
+<h3><i>Estado:</i> {% if tarea.available %} <span style="color: green;">Disponible </span>{% else %} <span style="color: red;"> No Disponible </span> {% endif %}</h3>
+
+{% endblock %}

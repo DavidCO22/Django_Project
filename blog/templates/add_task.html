@@ -1,0 +1,24 @@
+{% extends 'layouts/navegacion.html' %}
+
+{% block content %}
+
+<h1>{{mode}}</h1>
+
+<form action="" method="post">
+
+    {% csrf_token %}
+    <p>{{error}}</p>
+    {{form.as_p}}
+
+    <br>
+    <br>
+    <button type="submit">finalizar</button>
+    <a href="{% url 'tareas' %}"><button type="button">Cancelar</button></a>
+    
+</form>
+
+
+
+
+
+{% endblock %}

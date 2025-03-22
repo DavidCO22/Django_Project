@@ -1,0 +1,48 @@
+body{
+
+    background-color:plum;
+
+}
+
+
+.filasTareas , .filasTareas1 , .filasTareas2 {
+
+    text-align: center;
+    font-size: 30px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.filasTareas .editb{
+
+    
+    border-radius: 6px;
+    border: 1px solid black;
+    background-color: white;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    margin-right: 5px;
+
+}
+
+.filasTareas .lista{
+
+    margin-right: 80px;
+
+}
+
+.filasTareas2 p{
+
+    margin-right: 80px;
+    margin-left: 20px;
+    text-align: center;
+
+}
+
+
+
+

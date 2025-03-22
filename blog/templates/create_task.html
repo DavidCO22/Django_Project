@@ -1,0 +1,16 @@
+{% extends 'layouts/navegacion.html' %}
+
+{% block content %}
+
+<h1>Creacion de tarea</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+
+    <button>
+        save
+    </button>
+</form>
+
+{% endblock %}

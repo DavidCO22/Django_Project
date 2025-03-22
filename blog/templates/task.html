@@ -1,0 +1,14 @@
+{% extends 'layouts/navegacion.html' %}
+
+{% block content %}
+
+<h1>Tareas de {{proj}}</h1>
+<br><br>
+{% for tarea in pro %}
+
+    <h2>{{tarea.title}}</h2>
+    <p>descripcion: {{tarea.description}}</p>
+    <br>
+
+{% endfor %}
+{% endblock %}

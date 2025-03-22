@@ -1,0 +1,35 @@
+{% extends 'layouts/navegacion.html' %}
+
+{% block content %}
+
+<h1>Tareas</h1>
+
+{{error}}
+
+<!-- <ul> -->
+<table>
+{% for tarea in tasks %}
+
+<!--     <li>
+        <a href="/info_task/{{tarea.title}}">{{tarea.title}}</a>
+        <a class="editb" href="/edit_task/{{tarea.title}}"><button>Editar</button></a> 
+        <a class="editb" href="/delete_task/{{tarea.title}}"><button>eliminar</button></a>
+    </li> -->
+
+    <tr>
+        <td class="filasTareas1"><a class="lista" href="/info_task/{{tarea.title}}">{{tarea.title}}</a></td>
+        <td class="filasTareas2"><p>{% if tarea.available %}✔️{% else %}❌{% endif %}</p></td>
+        <td class="filasTareas"><a class="editb" href="/edit_task/{{tarea.title}}">Editar</a></td>
+        <td class="filasTareas"><a class="editb" href="/delete_task/{{tarea.title}}">eliminar</a></td>
+    </tr>
+
+{% endfor %}
+</table>
+<!-- </ul> -->
+
+<br><br><br>
+
+
+<a href="{% url 'add_task' %}"><button>agregar</button></a>
+
+{% endblock %}

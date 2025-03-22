@@ -1,0 +1,20 @@
+{% extends 'layouts/navegacion.html' %}
+
+{% block content %}
+
+<h1>Portafolio de Proyectos</h1>
+
+{% for project in proj %}
+
+    <h2><a href="/task/{{project.name}}">{{project.name}}</a></h2>
+
+{% endfor %}
+
+<div>
+
+    <a href="/create_task/task"><button>add task</button></a>
+    <a href="/create_task/proyectos"><button>add project</button></a>
+
+</div>
+
+{% endblock %}
